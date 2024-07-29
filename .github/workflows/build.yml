@@ -45,7 +45,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: apk
-        path: app/build/outputs/apk/release/app-release.apk
+        path: .github/workflows
 
     - name: Print Gradle Build Logs
       if: failure()
