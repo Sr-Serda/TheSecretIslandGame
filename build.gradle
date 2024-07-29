@@ -1,0 +1,25 @@
+// Define a versão do Gradle
+plugins {
+    id 'java'
+}
+
+// Define o repositório onde as dependências serão buscadas
+repositories {
+    mavenCentral()
+}
+
+// Configurações para o projeto
+group = 'com.exemplo'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '11' // Define a versão do Java
+
+// Dependências do projeto
+dependencies {
+    // Dependência para JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+// Configurações de testes
+test {
+    useJUnitPlatform()
+}
